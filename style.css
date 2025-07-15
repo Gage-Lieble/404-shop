@@ -58,7 +58,7 @@ h2,h3{
 
 #hero-title{
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
     text-align: center;
     width: 100vw;
     color: #abe9ff;
@@ -140,11 +140,12 @@ h2,h3{
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    overflow-x: hidden;
 }
 #about-title{
     text-align: center;
     font-size: 10vw;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 #about-socials{
@@ -153,7 +154,8 @@ h2,h3{
     justify-content: center;
     background-color: #086bbc;
     padding: 10px;
-    margin: 20px 20px 30px 20px;
+    margin: 20px 20px 75px 20px;
+    border-bottom: #abe9ff 4px solid;
 }
 #about-socials>h4{
     margin: 0;
@@ -177,7 +179,13 @@ h2,h3{
 .social-icon{
     color: #abe9ff;
 }
-
+.bar{
+    width:200vw; 
+    border-top: #abe9ff 4px solid; 
+    left: -200px; 
+    position: relative;
+    margin: 0px 0px 75px 0px;
+}
 #about-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
