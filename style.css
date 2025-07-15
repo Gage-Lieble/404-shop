@@ -58,7 +58,7 @@ h2,h3{
 
 #hero-title{
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     text-align: center;
     width: 100vw;
     color: #abe9ff;
@@ -144,7 +144,7 @@ h2,h3{
 #about-title{
     text-align: center;
     font-size: 10vw;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 #about-socials{
@@ -153,11 +153,16 @@ h2,h3{
     justify-content: center;
     background-color: #086bbc;
     padding: 10px;
-    margin: 20px 0px 25px 0px;
+    margin: 20px 20px 30px 20px;
 }
 #about-socials>h4{
     margin: 0;
     text-align: center;
+}
+
+#about-name{
+    font-size: 1.5rem;
+    padding: 5px 0px 2px ;
 }
 
 #about-socials>h4>a{
