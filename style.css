@@ -69,7 +69,7 @@ h2,h3{
 
 #hero-title{
     position: absolute;
-    bottom: 100dvh;
+    bottom: 0dvh;
     text-align: center;
     width: 100vw;
     color: #abe9ff;
