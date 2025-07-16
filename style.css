@@ -67,10 +67,9 @@ h2,h3{
     opacity: 70%;
 }
 
-
 #hero-title{
     position: absolute;
-    bottom: 10%;
+    bottom: 100dvh;
     text-align: center;
     width: 100vw;
     color: #abe9ff;
@@ -229,6 +228,7 @@ footer{
     margin: 0;
     font-size: 15px;
     letter-spacing: 2px;
+    font-family: Para;
 }
 #footer-text>a{
     
