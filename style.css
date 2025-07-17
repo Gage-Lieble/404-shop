@@ -295,6 +295,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 
 #fof-logo{
@@ -324,4 +325,9 @@ footer{
     text-decoration: none;
     font-weight: bold;
     margin: 15px 0px 0px 0px;
+}
+
+.noscroll{
+    overflow-y: hidden;
+
 }
