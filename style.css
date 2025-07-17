@@ -190,17 +190,13 @@ h2,h3{
 }
 
 .about-para{
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 0;
 }
 #moomoo-text{
-    /* position: absolute; */
     text-align: center;
-    width: 100%;
-    /* bottom: 20%; */
-    font-size:12vw;
-    /* background-color: beige; */
-    height: 100%;
+    /* width: 120%; */
+    font-size:11vw;
     margin: 0;
     padding: 0;
     font-family: Titles;
@@ -213,6 +209,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin: 10px 0px 25px 0px;
+/* background-color: purple; */
 
 }
 
