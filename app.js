@@ -27,3 +27,5 @@ const showHeroSlides = () => {
 
 slides[0].classList.add("active");
 setTimeout(showHeroSlides, heroDelay);
+
+// CHECKOUT

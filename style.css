@@ -124,7 +124,6 @@ h2,h3{
 
 .product-card-img{
     width: 100%;
-    filter: grayscale();
 }
 
 .card-details{
@@ -170,7 +169,7 @@ h2,h3{
     flex-direction: column;
     justify-content: center;
     background-color: #086bbc;
-    padding: 10px;
+    padding: 10px 10px 30px 10px;
     margin: 20px 20px 75px 20px;
     border-bottom: #abe9ff 4px solid;
 }
@@ -182,17 +181,62 @@ h2,h3{
 #about-name{
     font-size: 1.5rem;
     padding: 5px 0px 2px ;
+    margin: 0;
 }
 
-#about-socials>h4>a{
+#about-insta{
     color: #abe9ff;
+    margin: 0;
 }
 
-#about-socials>p{
+#about-para{
     text-align: center;
-
     margin-bottom: 0;
 }
+#moomoo-text{
+    /* position: absolute; */
+    text-align: center;
+    width: 100%;
+    /* bottom: 20%; */
+    font-size:12vw;
+    /* background-color: beige; */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Titles;
+}
+#moomoo-wrap{
+/* background-color: pink; */
+position: relative;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px 0px 25px 0px;
+
+}
+
+#about-moomoo{
+    height: 30vw;
+    position: absolute;
+
+    
+}
+
+.moomoo-intro{
+    /* background-color: pink; */
+    width: 100%;
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+#about-name-wrap{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .social-icon{
     color: #abe9ff;
 }
