@@ -184,7 +184,13 @@ h2,h3{
     margin: 0;
     text-align: center;
 }
+#about-name-wrap{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
 #about-name{
     font-size: 1.5rem;
     padding: 5px 0px 2px ;
@@ -232,13 +238,7 @@ margin: 10px 0px 25px 0px;
     text-align: center;
     margin: 30px 0px 30px 0px;
 }
-#about-name-wrap{
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-}
 
 .social-icon{
     color: var(--accent);
@@ -284,4 +284,44 @@ footer{
     
     color: var(--accent);
    
+}
+
+/* 404 PAGE */
+
+#fof-wrap{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fof-logo{
+    width: 50%;
+}
+
+.fof-error-title{
+    margin: 15px 0px 10px 0px;
+    font-size: 6vw;
+    font-family: Titles;
+}
+
+.fof-bio{
+    margin: 0;
+    font-family: Para;
+    text-align: center;
+}
+
+.fof-home{
+    background-color: var(--dark);
+    padding: 10px 0px 10px 0px;
+    width: 50vw;
+    color: var(--accent);
+    border: var(--accent) 4px solid;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 0px 0px 0px;
 }
