@@ -1,8 +1,7 @@
 
 // HERO
-
 const slides = document.querySelectorAll(".hero-backdrop")
-let currHero = 0
+let currHero = Math.floor(Math.random() * slides.length)
 const heroDelay = 10000
 
 const setHeroHeight = () => {
@@ -16,7 +15,7 @@ window.addEventListener('resize', setHeroHeight);
 
 const showHeroSlides = () => {
   slides.forEach(hero => {
-    hero.classList.remove("active");
+    hero.classList.remove("active", "no-transistion");
   });
 
   currHero = (currHero + 1) % slides.length;
@@ -25,7 +24,7 @@ const showHeroSlides = () => {
   setTimeout(showHeroSlides, heroDelay);
 }
 
-slides[0].classList.add("active");
+slides[currHero].classList.add("active", "no-transistion");
 setTimeout(showHeroSlides, heroDelay);
 
 // CHECKOUT

@@ -1,7 +1,7 @@
 /* CONFIG */
 body, html{
     margin: 0;
-    background-color: #086bbc;
+    background-color: var(--blue);
     min-height: 100vh;
     font-family: Para;
     color: white;
@@ -9,7 +9,7 @@ body, html{
 
 h2,h3{
     font-family: Titles;
-    color: #abe9ff;
+    color: var(--accent);
 }
 @font-face {
   font-family: Titles;
@@ -20,18 +20,23 @@ h2,h3{
   font-family: Para;
   src: url('./assets/font/Atkinson.ttf');
 }
+:root {
+  --blue: #086bbc;
+  --accent: #abe9ff;
+  --dark: #242424;
+}
 
 /* NAV */
 
 #nav-wrap{
-    background-color: #086bbc;
+    background-color: var(--blue);
     padding: 10px;
     display: flex;
     justify-content: center;
     position: sticky;
     top:0;
     z-index: 10;
-    border-bottom: #abe9ff 4px solid;
+    border-bottom: var(--accent) 4px solid;
 }
 
 #nav-logo{
@@ -66,13 +71,15 @@ h2,h3{
 .hero-backdrop.active{
     opacity: 70%;
 }
-
+.hero-backdrop.no-transistion{
+    transition: none !important;
+}
 #hero-title{
     position: absolute;
     bottom: 10%;
     text-align: center;
     width: 100vw;
-    color: #abe9ff;
+    color: var(--accent);
     z-index: 1;
     font-size: 10vw;
     font-family: Titles;
@@ -101,12 +108,12 @@ h2,h3{
 /* PRODUCTS */
 
 #products-wrap{
-    border-top: #abe9ff 4px solid;
-    border-bottom: #abe9ff 4px solid;
-    background-color: #086bbc;
+    border-top: var(--accent) 4px solid;
+    border-bottom: var(--accent) 4px solid;
+    background-color: var(--blue);
     height: 100%;
     padding: 20px;
-    color: #abe9ff;
+    color: var(--accent);
 }
 
 #product-grid{
@@ -118,7 +125,7 @@ h2,h3{
 
 .product-card{
     padding: 30px;
-    background-color: rgb(36, 36, 36);
+    background-color: var(--dark);
     text-align: center;
 }
 
@@ -135,11 +142,11 @@ h2,h3{
 }
 
 .product-button{
-    background-color: #abe9ff;
+    background-color: var(--accent);
     padding: 20px 0px 20px 0px;
     width: 100%;
     color: #000000;
-    border: #086bbc 4px solid;
+    border: var(--blue) 4px solid;
     box-sizing: border-box;
 }
 
@@ -151,7 +158,7 @@ h2,h3{
 /* ABOUT */
 
 #about-wrap{
-    background-color: rgb(36, 36, 36);
+    background-color: var(--dark);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,10 +175,10 @@ h2,h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #086bbc;
+    background-color: var(--blue);
     padding: 10px 10px 30px 10px;
     margin: 20px 20px 75px 20px;
-    border-bottom: #abe9ff 4px solid;
+    border-bottom: var(--accent) 4px solid;
 }
 #about-socials>h4{
     margin: 0;
@@ -184,8 +191,8 @@ h2,h3{
     margin: 0;
 }
 
-#about-insta{
-    color: #abe9ff;
+.about-links{
+    color: var(--accent);
     margin: 0;
 }
 
@@ -195,7 +202,6 @@ h2,h3{
 }
 #moomoo-text{
     text-align: center;
-    /* width: 120%; */
     font-size:11vw;
     margin: 0;
     padding: 0;
@@ -235,11 +241,11 @@ margin: 10px 0px 25px 0px;
 }
 
 .social-icon{
-    color: #abe9ff;
+    color: var(--accent);
 }
 .bar{
     width:200vw; 
-    border-top: #abe9ff 4px solid; 
+    border-top: var(--accent) 4px solid; 
     left: -200px; 
     position: relative;
     margin: 0px 0px 75px 0px;
@@ -261,11 +267,11 @@ margin: 10px 0px 25px 0px;
 /* FOOTER */
 
 footer{
-    background-color: #086bbc;
+    background-color: var(--blue);
     display: flex;
     justify-content: center;
     padding: 10px;
-    border-top: #abe9ff 4px solid;
+    border-top: var(--accent) 4px solid;
 }
 
 #footer-text{
@@ -276,6 +282,6 @@ footer{
 }
 #footer-text>a{
     
-    color: #abe9ff;
+    color: var(--accent);
    
 }
